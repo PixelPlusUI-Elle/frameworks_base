@@ -56,7 +56,7 @@ public class BatteryStatus {
     public final boolean present;
 
     public BatteryStatus(int status, int level, int plugged, int health,
-            int maxChargingWattage, boolean present) {
+            int maxChargingWattage, boolean oemFastChargeStatus, boolean present) {
         this.status = status;
         this.level = level;
         this.plugged = plugged;
