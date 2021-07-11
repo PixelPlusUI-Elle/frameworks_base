@@ -2692,4 +2692,7 @@ enum PageId {
     // Custom Additions
     // Panel for Bluetooth
     PANEL_BLUETOOTH = 2001;
+
+    // OS: R QPR2
+    BLUETOOTH_PAIRING_RECEIVER = 1851;
 }
