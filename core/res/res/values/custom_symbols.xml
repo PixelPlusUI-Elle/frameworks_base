@@ -43,23 +43,6 @@
 
     <!-- Expected value from fast charging status file -->
     <java-symbol type="string" name="config_oemFastChargerStatusValue" />
-
-    <!-- Screen recorder framerate limit -->
-    <java-symbol type="integer" name="config_screenRecorderMaxFramerate" />
-
-    <java-symbol type="string" name="reboot_to_recovery_title" />
-    <java-symbol type="string" name="reboot_to_recovery_message" />
-    <java-symbol type="string" name="reboot_to_bootloader_title" />
-    <java-symbol type="string" name="reboot_to_bootloader_message" />
-    <java-symbol type="string" name="reboot_title" />
-    <java-symbol type="string" name="reboot_message" />
-
-    <java-symbol type="array" name="custom_config_globalActionsList" />
-	    
-    <!-- App error dialog -->
-    <java-symbol type="id" name="aerr_copy" />
-    <java-symbol type="string" name="url_copy_success" />
-    <java-symbol type="string" name="url_copy_failed" />
 	    
     <!-- Button and keyboard backlight -->
     <java-symbol type="integer" name="config_deviceSupportsButtonBrightnessControl" />
