@@ -100,7 +100,6 @@ import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.RemoteInputQuickSettingsDisabler;
 import com.android.systemui.statusbar.policy.UserInfoControllerImpl;
 import com.android.systemui.statusbar.policy.UserSwitcherController;
-import com.android.systemui.tuner.TunerService;
 import com.android.systemui.volume.VolumeComponent;
 
 import java.util.Optional;
@@ -203,8 +202,7 @@ public interface UnusedStatusBarModule {
             KeyguardIndicationController keyguardIndicationController,
             Lazy<NotificationShadeDepthController> notificationShadeDepthController,
             DismissCallbackRegistry dismissCallbackRegistry,
-            StatusBarTouchableRegionManager statusBarTouchableRegionManager,
-            TunerService tunerService) {
+            StatusBarTouchableRegionManager statusBarTouchableRegionManager) {
         return new UnusedStatusBar(
                 context,
                 notificationsController,
@@ -282,7 +280,6 @@ public interface UnusedStatusBarModule {
                 keyguardIndicationController,
                 dismissCallbackRegistry,
                 notificationShadeDepthController,
-                statusBarTouchableRegionManager,
-                tunerService);
+                statusBarTouchableRegionManager);
     }
 }
