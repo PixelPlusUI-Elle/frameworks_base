@@ -2592,6 +2592,9 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener, Dumpab
 
         // change in oem fast charging while plugged in
         if (nowPluggedIn && current.oemFastChargeStatus != old.oemFastChargeStatus) {
+        
+	// change in battery overheat
+        if (current.health != old.health) {
             return true;
         }
 
